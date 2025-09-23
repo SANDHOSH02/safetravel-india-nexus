@@ -66,8 +66,8 @@ const Login = () => {
               <img src={stsmsLogo} alt="STSMS Logo" className="h-16 w-16 animate-float" />
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
-            <p className="text-muted-foreground">Smart Tourist Safety Monitoring System</p>
-            <p className="text-sm text-primary font-medium">Safe Travels in Incredible India</p>
+            <p className="text-muted-foreground">Tourist Safety Monitoring System</p>
+            <p className="text-sm text-primary font-medium">Tourist Safety Monitoring System</p>
           </div>
 
           {/* Login Form */}

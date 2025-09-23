@@ -41,10 +41,10 @@ export const Header: React.FC<HeaderProps> = ({ showSearch = true, children }) =
           {/* Logo and Brand */}
           <div className="flex items-center space-x-4">
             <Link to="/" className="flex items-center space-x-3 interactive-scale">
-              <img src={stsmsLogo} alt="STSMS Logo" className="h-10 w-10" />
+              <img src={stsmsLogo} alt="STSMS Logo" className="h-12 w-12" />
               <div className="hidden sm:block">
-                <h1 className="text-xl font-bold text-primary">STSMS</h1>
-                <p className="text-xs text-muted-foreground">Safe Travels in Incredible India</p>
+                <h1 className="text-xl font-bold text-primary">TSMS</h1>
+                <p className="text-xs text-muted-foreground">Tourist Safety Monitoring System</p>
               </div>
             </Link>
           </div>

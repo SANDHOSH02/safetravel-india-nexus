@@ -200,7 +200,7 @@ const PoliceDashboard = () => {
             Police Command Center 🚔
           </h1>
           <p className="text-muted-foreground">
-            Real-time monitoring and response system for tourist safety • {user?.stationLocation}
+            Real-time monitoring and response system for Tourist Safety Monitoring System • {user?.stationLocation}
           </p>
         </div>
 
@@ -412,7 +412,7 @@ const PoliceDashboard = () => {
                   <span>High-Risk Zones</span>
                 </CardTitle>
                 <CardDescription>
-                  Areas requiring enhanced monitoring
+                  Areas requiring enhanced monitoring (Tourist Safety Monitoring System)
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">

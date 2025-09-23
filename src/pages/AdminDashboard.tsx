@@ -473,7 +473,7 @@ const AdminDashboard = () => {
                     <Badge variant="default">Operational</Badge>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-sm">Monitoring</span>
+                    <span className="text-sm">Tourist Safety Monitoring System</span>
                     <Badge variant="default">Active</Badge>
                   </div>
                   <div className="flex items-center justify-between">

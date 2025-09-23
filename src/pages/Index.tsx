@@ -30,7 +30,7 @@ const Index = () => {
     {
       icon: MapPin,
       title: 'Real-time Tracking',
-      description: 'GPS-based location monitoring with geo-fencing alerts for tourist safety zones.',
+  description: 'GPS-based location monitoring with geo-fencing alerts for tourist safety zones. Tourist Safety Monitoring System.',
       color: 'success'
     },
     {
@@ -55,7 +55,7 @@ const Index = () => {
   ];
 
   const benefits = [
-    { text: 'Comprehensive tourist safety monitoring', checked: true },
+  { text: 'Comprehensive Tourist Safety Monitoring System', checked: true },
     { text: 'Real-time emergency response system', checked: true },
     { text: 'Cultural heritage site protection', checked: true },
     { text: 'Multi-language support', checked: true },
@@ -77,19 +77,19 @@ const Index = () => {
         <div className="container mx-auto px-4 lg:px-6">
           <div className="max-w-4xl mx-auto text-center animate-fade-up">
             <div className="flex items-center justify-center mb-8">
-              <img src={stsmsLogo} alt="STSMS Logo" className="h-20 w-20 animate-float" />
+              <img src={stsmsLogo} alt="STSMS Logo" className="h-32 w-32 animate-float" />
             </div>
             
             <h1 className="text-hero mb-6">
-              Smart Tourist Safety Monitoring System
+              Tourist Safety Monitoring System
             </h1>
             
             <p className="text-xl lg:text-2xl text-foreground mb-4 max-w-3xl mx-auto">
-              Ensuring safe and memorable travels across Incredible India with cutting-edge technology and real-time monitoring.
+              Ensuring safe and memorable travels across Incredible India with cutting-edge technology and real-time monitoring. Powered by Tourist Safety Monitoring System.
             </p>
             
             <p className="text-lg text-primary font-semibold mb-8">
-              🇮🇳 Safe Travels in Incredible India 🇮🇳
+              🇮🇳 Tourist Safety Monitoring System 🇮🇳
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -183,7 +183,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Personal safety monitoring, digital ID, emergency alerts, and real-time location sharing.
+                    Personal safety monitoring, digital ID, emergency alerts, and real-time location sharing. Tourist Safety Monitoring System.
                   </p>
                   <div className="flex space-x-2">
                     <Badge variant="outline">Digital ID</Badge>
@@ -202,7 +202,7 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">
-                    Real-time monitoring, emergency response coordination, and tourist cluster management.
+                    Real-time monitoring, emergency response coordination, and tourist cluster management. Tourist Safety Monitoring System.
                   </p>
                   <div className="flex space-x-2">
                     <Badge variant="outline">Live Tracking</Badge>
@@ -264,14 +264,14 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-4">
-                <img src={stsmsLogo} alt="STSMS" className="h-10 w-10" />
+                <img src={stsmsLogo} alt="STSMS" className="h-16 w-16" />
                 <div>
-                  <h3 className="font-bold text-lg">STSMS</h3>
-                  <p className="text-sm text-muted-foreground">Smart Tourist Safety Monitoring</p>
+                  <h3 className="font-bold text-lg">TSMS</h3>
+                  <p className="text-sm text-muted-foreground">Tourist Safety Monitoring System</p>
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">
-                Ensuring safe and memorable travels across Incredible India with cutting-edge technology and real-time monitoring.
+                Ensuring safe and memorable travels across Incredible India with cutting-edge technology and real-time monitoring. Powered by Tourist Safety Monitoring System.
               </p>
               <div className="flex space-x-4">
                 <Badge variant="outline">🇮🇳 Made in India</Badge>
@@ -301,7 +301,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 Smart Tourist Safety Monitoring System. All rights reserved. 🇮🇳</p>
+            <p>&copy; 2024 Tourist Safety Monitoring System. All rights reserved. 🇮🇳</p>
           </div>
         </div>
       </footer>
