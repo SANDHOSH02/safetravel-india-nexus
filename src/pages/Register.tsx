@@ -34,16 +34,7 @@ const Register = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
 
-  const getPasswordStrength = (password: string) => {
-    let strength = 0;
-    if (password.length >= 8) strength += 25;
-    if (/[A-Z]/.test(password)) strength += 25;
-    if (/[a-z]/.test(password)) strength += 25;
-    if (/[0-9]/.test(password)) strength += 25;
-    return strength;
-  };
-
-  const passwordStrength = getPasswordStrength(formData.password);
+  // Password strength logic removed
   const passwordsMatch = formData.password && formData.confirmPassword && formData.password === formData.confirmPassword;
 
   const handleChange = (field: string, value: string | boolean) => {
@@ -69,14 +60,7 @@ const Register = () => {
       return false;
     }
 
-    if (passwordStrength < 75) {
-      toast({
-        title: "Weak Password",
-        description: "Please choose a stronger password",
-        variant: "destructive",
-      });
-      return false;
-    }
+    // Password strength validation removed
 
     if (!formData.agreeTerms) {
       toast({
@@ -266,17 +250,7 @@ const Register = () => {
                         {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
                       </Button>
                     </div>
-                    {formData.password && (
-                      <div className="space-y-1">
-                        <div className="flex items-center justify-between text-xs">
-                          <span>Password Strength</span>
-                          <span className={passwordStrength >= 75 ? 'text-success' : passwordStrength >= 50 ? 'text-warning' : 'text-danger'}>
-                            {passwordStrength >= 75 ? 'Strong' : passwordStrength >= 50 ? 'Medium' : 'Weak'}
-                          </span>
-                        </div>
-                        <Progress value={passwordStrength} className="h-2" />
-                      </div>
-                    )}
+                    {/* Password strength UI removed */}
                   </div>
 
                   <div className="space-y-2">
