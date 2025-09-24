@@ -29,7 +29,10 @@ const PoliceDashboard = () => {
   const [selectedCity, setSelectedCity] = useState('all');
   const [selectedStatus, setSelectedStatus] = useState('all');
 
+  const panicAudio = new Audio("https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa1c3b.mp3"); // Free siren sound
   const handleRespond = (alertId: string) => {
+    panicAudio.currentTime = 0;
+    panicAudio.play();
     toast({
       title: "Response Initiated",
       description: `Emergency response team dispatched for Alert #${alertId}`,

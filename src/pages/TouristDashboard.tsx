@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Header } from '@/components/shared/Header';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -22,13 +22,19 @@ import {
   Camera
 } from 'lucide-react';
 import indiaMapDashboard from '@/assets/india-map-dashboard.jpg';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 const TouristDashboard = () => {
   const { user } = useAuth();
   const { toast } = useToast();
   const [safetyScore] = useState(85);
+  const idCardRef = useRef<HTMLDivElement>(null);
 
+  const panicAudio = new Audio("https://cdn.pixabay.com/audio/2022/07/26/audio_124bfa1c3b.mp3"); // Free siren sound
   const handlePanicButton = () => {
+    panicAudio.currentTime = 0;
+    panicAudio.play();
     toast({
       title: "🚨 Emergency Alert Sent!",
       description: "Help is on the way! Your location has been shared with nearby authorities.",
@@ -36,11 +42,25 @@ const TouristDashboard = () => {
     });
   };
 
-  const handleDownloadId = () => {
-    toast({
-      title: "ID Card Downloaded",
-      description: "Your digital ID has been saved to downloads.",
-    });
+  const handleDownloadId = async () => {
+    if (!idCardRef.current) return;
+    try {
+      const canvas = await html2canvas(idCardRef.current);
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF({ orientation: 'landscape', unit: 'px', format: [canvas.width, canvas.height] });
+      pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
+      pdf.save('Tourist-Digital-ID.pdf');
+      toast({
+        title: "ID Card Downloaded",
+        description: "Your digital ID has been saved as a PDF.",
+      });
+    } catch (err) {
+      toast({
+        title: "Download Failed",
+        description: "Could not generate PDF. Please try again.",
+        variant: "destructive",
+      });
+    }
   };
 
   const safetyBreakdown = [
@@ -136,7 +156,7 @@ const TouristDashboard = () => {
           {/* Left Column - Main Content */}
           <div className="lg:col-span-2 space-y-6">
             {/* Digital ID Card */}
-            <Card className="card-dashboard bg-gradient-to-br from-primary-light to-accent">
+            <Card className="card-dashboard bg-gradient-to-br from-primary-light to-accent" ref={idCardRef}>
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <Shield className="h-5 w-5 text-primary" />

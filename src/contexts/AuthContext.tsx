@@ -52,7 +52,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     // Mock user data based on role
     const mockUser: User = {
       id: Math.random().toString(36).substr(2, 9),
-      name: role === 'tourist' ? 'Priya Sharma' : role === 'police' ? 'Inspector Raj Kumar' : 'Admin Rakesh',
+  name: role === 'tourist' ? 'Sandhosh G' : role === 'police' ? 'Inspector Raj Kumar' : 'Admin Rakesh',
       email,
       role,
       avatar: `https://api.dicebear.com/7.x/avataaars/svg?seed=${email}`,
@@ -92,6 +92,11 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
   const logout = () => {
     setUser(null);
+    // Clear any session/local storage if used for auth
+    localStorage.clear();
+    sessionStorage.clear();
+    // Optionally, force a navigation to login to clear history
+    window.location.replace('/login');
   };
 
   const value = {
