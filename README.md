@@ -3,8 +3,10 @@
 <div align="center">
 	<img src="https://raw.githubusercontent.com/SANDHOSH02/safetravel-india-nexus/main/src/assets/stsms-logo.png" alt="SafeTravel India Nexus Logo" width="180" />
   
-	<h1>SafeTravel India Nexus</h1>
+	
 </div>
+
+##  SafeTravel India Nexus
 
 
 ## 🚦 Project Overview
