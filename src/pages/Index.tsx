@@ -301,7 +301,8 @@ const Index = () => {
           </div>
           
           <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; 2024 Tourist Safety Monitoring System. All rights reserved. 🇮🇳</p>
+            <p>&copy; 2025 Tourist Safety Monitoring System. All rights reserved. 🇮🇳 </p>
+            <p> Developed by  Sandhosh & Pranav</p>
           </div>
         </div>
       </footer>
