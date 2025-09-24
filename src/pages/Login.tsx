@@ -63,10 +63,9 @@ const Login = () => {
           {/* Header */}
           <div className="text-center mb-8 animate-fade-up">
             <div className="flex items-center justify-center mb-4">
-              <img src={stsmsLogo} alt="STSMS Logo" className="h-16 w-16 animate-float" />
+              <img src={stsmsLogo} alt="STSMS Logo" className="h-20 w-20 animate-float" />
             </div>
             <h1 className="text-3xl font-bold text-foreground mb-2">Welcome Back</h1>
-            <p className="text-muted-foreground">Tourist Safety Monitoring System</p>
             <p className="text-sm text-primary font-medium">Tourist Safety Monitoring System</p>
           </div>
 
@@ -207,7 +206,7 @@ const Login = () => {
           </Card>
 
           {/* Demo Credentials */}
-          <Card className="mt-6 card-elevated bg-accent/50">
+          {/* <Card className="mt-6 card-elevated bg-accent/50">
             <CardContent className="pt-6">
               <h3 className="font-semibold text-center mb-3">Demo Credentials</h3>
               <div className="space-y-2 text-sm">
@@ -216,7 +215,7 @@ const Login = () => {
                 <div><strong>Admin:</strong> admin@demo.com / demo123</div>
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </div>
       </div>
     </div>

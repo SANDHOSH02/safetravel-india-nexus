@@ -172,7 +172,7 @@ const Register = () => {
             <div className="flex items-center justify-center mb-4">
               <img src={stsmsLogo} alt="STSMS Logo" className="h-16 w-16 animate-float" />
             </div>
-            <h1 className="text-3xl font-bold text-foreground mb-2">Join STSMS</h1>
+            <h1 className="text-3xl font-bold text-foreground mb-2">Join TSMS</h1>
             <p className="text-muted-foreground">Create your account for safer travels</p>
             <p className="text-sm text-primary font-medium">Safe Travels in Incredible India</p>
           </div>
