@@ -1,73 +1,71 @@
-# Welcome to your Lovable project
 
-## Project info
 
-**URL**: https://lovable.dev/projects/1ae5c8f6-ee27-484d-bf92-43815c926f15
+<div align="center">
+	<img src="https://raw.githubusercontent.com/SANDHOSH02/safetravel-india-nexus/main/src/assets/stsms-logo.png" alt="SafeTravel India Nexus Logo" width="180" />
+  
+	<h1>SafeTravel India Nexus</h1>
+</div>
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+## 🚦 Project Overview
 
-**Use Lovable**
+**SafeTravel India Nexus** is a modern web application designed to enhance travel safety and experience in India. The platform provides dashboards for tourists, police, and administrators, offering real-time information, registration, and support features.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/1ae5c8f6-ee27-484d-bf92-43815c926f15) and start prompting.
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Tech Stack
 
-**Use your preferred IDE**
+- **Frontend Framework:** React
+- **Build Tool:** Vite
+- **Language:** TypeScript
+- **UI Library:** shadcn-ui
+- **Styling:** Tailwind CSS
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 👨‍💻 Team Members
 
-Follow these steps:
+- **Sandhosh** (Lead Developer)
+- **Pranav** (Frontend Engineer)
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## ✨ Features
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Tourist, Police, and Admin dashboards
+- User authentication and registration
+- Responsive UI for mobile and desktop
+- Real-time data visualization
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
 
-**Edit a file directly in GitHub**
+## 🚀 Getting Started
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Clone the repository:**
+   ```sh
+   git clone <YOUR_GIT_URL>
+   cd safetravel-india-nexus
+   ```
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📸 Project Screenshots
 
-## What technologies are used for this project?
+<div align="center">
+	<img src="src/assets/one.png" alt="Screenshot 1" width="220" style="margin:8px;" />
+	<img src="src/assets/two.png" alt="Screenshot 2" width="220" style="margin:8px;" />
+	<img src="src/assets/three.png" alt="Screenshot 3" width="220" style="margin:8px;" />
+	<img src="src/assets/four.png" alt="Screenshot 4" width="220" style="margin:8px;" />
+	<img src="src/assets/five.png" alt="Screenshot 5" width="220" style="margin:8px;" />
+	<img src="src/assets/six.png" alt="Screenshot 6" width="220" style="margin:8px;" />
+	<img src="src/assets/seven.png" alt="Screenshot 7" width="220" style="margin:8px;" />
+</div>
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/1ae5c8f6-ee27-484d-bf92-43815c926f15) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+<div align="center">
+	<sub>Made with ❤️ by Sandhosh & Pranav | For educational and demonstration purposes</sub>
+</div>
