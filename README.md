@@ -1,17 +1,15 @@
 
 
 <div align="center">
-	<img src="https://raw.githubusercontent.com/SANDHOSH02/safetravel-india-nexus/main/src/assets/stsms-logo.png" alt="SafeTravel India Nexus Logo" width="180" />
-  
-	
+   <img src="https://raw.githubusercontent.com/SANDHOSH02/safetravel-india-nexus/main/src/assets/stsms-logo.png" alt="Tourist Safety Monitoring System Logo" width="180" />
 </div>
 
-##  SafeTravel India Nexus
+##  Tourist Safety Monitoring System
 
 
 ## 🚦 Project Overview
 
-**SafeTravel India Nexus** is a modern web application designed to enhance travel safety and experience in India. The platform provides dashboards for tourists, police, and administrators, offering real-time information, registration, and support features.
+**Tourist Safety Monitoring System** is a modern web application designed to enhance travel safety and experience in India. The platform provides dashboards for tourists, police, and administrators, offering real-time information, registration, and support features.
 
 
 ## 🛠️ Tech Stack
